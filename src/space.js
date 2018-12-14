@@ -45,7 +45,7 @@ function getRandomColor() {
 }
 //-----------END OF RANDOM FUNCTIONS   -----------------------------------------
 
-let numStars = randNumRange(10,screen.width*0.1);
+let numStars = randNumRange(10,screen.width*0.05);
 for(let i = 0; i < numStars; i++){
     createStar();
 }
