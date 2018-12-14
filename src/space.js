@@ -1,22 +1,28 @@
 function createStar(){
     var space = document.getElementById("space");
     var star = document.createElement("div");
+
     space.appendChild(star);
     if(randNumGen()<=20){
         star.id = "group-one";
     }
     star.className = "pulse";
+
     star.style.marginLeft = randNumGen()+"%";
+
     let mTop = randNumGen()-75;
     if(mTop<0){
         mTop = randNumRange(0,20);
     }
     star.style.marginTop = mTop+"%";
+
     var colour = getRandomColor();
     star.style.backgroundColor = colour;
-    let widthAndHeigth = randNumRange(1,7)
+
+    let widthAndHeigth = randNumRange(2,6)
     star.style.width = widthAndHeigth + "px";
     star.style.height = widthAndHeigth + "px";
+
     star.style.animation = "pulse "+randNumRange(1,10)+"s infinite";
 }
 
