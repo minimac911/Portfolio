@@ -1,11 +1,8 @@
-function createStar(){
+function createStaicStar(){
     var space = document.getElementById("space");
     var star = document.createElement("div");
 
     space.appendChild(star);
-    if(randNumGen()<=20){
-        star.id = "group-one";
-    }
     star.className = "pulse";
 
     star.style.marginLeft = randNumGen()+"%";
@@ -23,7 +20,7 @@ function createStar(){
     star.style.width = widthAndHeigth + "px";
     star.style.height = widthAndHeigth + "px";
 
-    star.style.animation = "pulse "+randNumRange(1,10)+"s infinite";
+    star.style.animation = "pulse "+randNumRange(1,15)+"s infinite";
 }
 
 //----------RANFOM GENERATOR FUNCTIONS------------------------------------------
@@ -51,7 +48,7 @@ function getRandomColor() {
 }
 //-----------END OF RANDOM FUNCTIONS   -----------------------------------------
 
-let numStars = randNumRange(10,screen.width*0.05);
+let numStars = randNumRange(25,screen.width*0.02);
 for(let i = 0; i < numStars; i++){
-    createStar();
+    createStaicStar();
 }
