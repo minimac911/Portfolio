@@ -1,5 +1,3 @@
-var stars = [];
-
 function createStar(){
     var space = document.getElementById("space");
     var star = document.createElement("div");
@@ -20,13 +18,13 @@ function createStar(){
     star.style.width = widthAndHeigth + "px";
     star.style.height = widthAndHeigth + "px";
     star.style.animation = "pulse "+randNumRange(1,10)+"s infinite";
-
 }
 
+//----------RANFOM GENERATOR FUNCTIONS------------------------------------------
 function randNumRange(min, max){
     return Math.floor((Math.random() * max) + min);
 }
-//random number generator
+
 function randNumGen(){
     let num = Math.floor((Math.random() * 99) + 1);
     return num;
@@ -45,7 +43,9 @@ function getRandomColor() {
     }
     return color;
 }
+//-----------END OF RANDOM FUNCTIONS   -----------------------------------------
 
-for(let i = 0; i < randAmountStars(); i++){
+let numStars = randNumRange(10,screen.width*0.1);
+for(let i = 0; i < numStars; i++){
     createStar();
 }
