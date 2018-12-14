@@ -1,24 +1,30 @@
-// var star = document.getElementsByClassName("pulse");
-// var counter = 0;
-// var blnUp = true;
+var stars = [];
 
-// setInterval(() => { 
-//     let w = document.getElementById("pulse").style.width;
-//     let h = document.getElementById("pulse").style.height;
-//     if(blnUp){
-//         counter++;
-//         if(counter===10){
-//             blnUp = false;
-//         }
-//     }else{
-//         counter--;
-//         if(counter===0){
-//             blnUp = true;
-//         }
-//     }
-//     w += counter;
-//     h += counter;
-//     document.getElementById("pulse").style.width = w+"px";
-//     document.getElementById("pulse").style.height = h+"px";
-//     counter++;
-// }, 1000);
+function createStar(){
+    var space = document.getElementById("space");
+    var star = document.createElement("div");
+    space.appendChild(star);
+    star.className = "pulse";
+    star.style.marginLeft = randPosGen()+"%";
+    star.style.marginTop = randPosGen()+"px";
+
+}
+
+//random number generator
+function randPosGen(){
+    let num = Math.floor((Math.random() * 99) + 1);
+    return num;
+}
+
+function randColorPicker(){
+
+}
+
+function randAmountStars(){
+    let num = Math.floor((Math.random() * 50) + 30);
+    return num;
+}
+
+for(let i = 0; i < randAmountStars(); i++){
+    createStar();
+}
