@@ -1,14 +1,18 @@
 html, body {
     background-color: black;
     margin: 0; 
-    height: 100%; 
-    overflow: hidden;
     font-family: "Open Sans";
     font-weight: 300;
     font-size: 100%;
     font-family: 'Anonymous Pro', monospace; 
+    max-width: 100%;
+    overflow-x: hidden;
 }
-
+#main{
+    position: fixed;
+    width: 100%;
+    height: 100%;;
+}
 /*planet styling*/
 #planet{
     top: 25%;
@@ -96,13 +100,13 @@ body{
 }
 
 .p{
-  position:fixed;
+  position: absolute;;
   left:0px;
   top:50px;
   width:1px;
   height:1px;
   background-color:white;
-  position:fixed;
+  position:absolute;
   animation-name: particleAnimation;
   animation-timing-function: linear;
   animation-iteration-count: infinite;

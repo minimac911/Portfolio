@@ -48,8 +48,14 @@ function getRandomColor() {
 }
 //-----------END OF RANDOM FUNCTIONS   -----------------------------------------
 
-let numStars = randNumRange(100, screen.width * 0.05);
-for (let i = 0; i < numStars; i++) {
-    createStaicStar();
+function create(){
+    let numStars = randNumRange(100, screen.width * 0.05);
+    for (let i = 0; i < numStars; i++) {
+        createStaicStar();
+    }
 }
+
+
+create();
+
 
