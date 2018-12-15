@@ -19,8 +19,12 @@ function createStaicStar() {
     let widthAndHeigth = randNumRange(2, 6)
     star.style.width = widthAndHeigth + "px";
     star.style.height = widthAndHeigth + "px";
-
-    star.style.animation = "pulse " + randNumRange(1, 15) + "s infinite";
+    if(randNumGen()<=30){
+        star.style.animation = "pulse " + randNumRange(1, 9) + "s infinite";
+    }else{
+        star.style.animation = "null";
+    }
+   
 }
 
 //----------RANFOM GENERATOR FUNCTIONS------------------------------------------
@@ -47,6 +51,7 @@ function getRandomColor() {
     return color;
 }
 //-----------END OF RANDOM FUNCTIONS   -----------------------------------------
+
 
 function create(){
     let numStars = randNumRange(100, screen.width * 0.05);

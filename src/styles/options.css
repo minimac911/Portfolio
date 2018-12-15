@@ -1,0 +1,72 @@
+/*planet styling*/
+
+/*PLNAET NUMBER ONE*/
+#circle{
+    width: 150px;
+    height: 150px;
+    -webkit-transition: background-color 0.5s; /* Safari */
+    transition: background-color 0.5s; 
+}
+
+#circle:hover{ 
+    background-color: lime;
+}
+
+@keyframes grow{
+    to{
+        background-color: rgb(212, 181, 0);
+        width: 160px;
+        height: 160px;
+    }
+}
+
+.planet{
+    top: 10%;
+    position: absolute;
+    left: -60px;
+    width: 150px;
+    height: 150px;
+    background-color: gold;
+    border-radius: 50%;
+    display: inline-block;
+    border:10px solid grey;
+    animation: shake 5s 1s infinite;  
+}
+
+@keyframes shake {
+    10%, 50%, 70% {
+        width: 145px;
+        height: 145px;
+    }
+  
+    20%, 60% {
+        width: 155px;
+        height: 155px;
+    }
+}
+
+.Layer_1{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) ;
+    margin: 0;
+    height: 30%;
+    width: 30%; 
+}
+/* END OF PLANE NUMBER ONE */
+
+/* PLANET NUMBER TWO */
+#about-me{
+    /* visibility: hidden; */
+    left: 50%;    
+    width: 200px;
+    height: 200px;
+    animation: none;
+    background-color: rgb(255, 46, 46);
+}
+
+#about-me-icon{
+    width: 50px;
+}

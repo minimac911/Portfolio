@@ -12,31 +12,9 @@ html, body {
     position: absolute;
     width: 100%;
     height: 100%;
+    background-image: linear-gradient(rgb(33, 29, 49), rgb(1, 24, 48));
 }
-/*planet styling*/
-.planet{
-    top: 25%;
-    position: absolute;
-    left: -60px;
-    width: 150px;
-    height: 150px;
-    background-color: gold;
-    border-radius: 50%;
-    display: inline-block;
-    border:10px solid grey;
-    animation: shake 5s 1s infinite;  
-}
-@keyframes shake {
-    10%, 50%, 70% {
-        width: 145px;
-        height: 145px;
-    }
-  
-    20%, 60% {
-        width: 155px;
-        height: 155px;
-    }
-}
+
 /*Space style*/
 #space{
     position: absolute;
