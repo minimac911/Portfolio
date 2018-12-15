@@ -2,8 +2,6 @@
 
 /*PLNAET NUMBER ONE*/
 #circle{
-    width: 150px;
-    height: 150px;
     -webkit-transition: background-color 0.5s; /* Safari */
     transition: background-color 0.5s; 
 }
@@ -12,16 +10,8 @@
     background-color: lime;
 }
 
-@keyframes grow{
-    to{
-        background-color: rgb(212, 181, 0);
-        width: 160px;
-        height: 160px;
-    }
-}
-
 .planet{
-    top: 10%;
+    top: 7%;
     position: absolute;
     left: -60px;
     width: 150px;
@@ -58,15 +48,10 @@
 /* END OF PLANE NUMBER ONE */
 
 /* PLANET NUMBER TWO */
-#about-me{
-    /* visibility: hidden; */
-    left: 50%;    
-    width: 200px;
-    height: 200px;
+#planet_git{
+    left: -200px;
+    top: 26%;
+    width: 100px;
+    height: 100px;
     animation: none;
-    background-color: rgb(255, 46, 46);
-}
-
-#about-me-icon{
-    width: 50px;
 }

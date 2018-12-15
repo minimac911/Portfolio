@@ -52,6 +52,25 @@ function getRandomColor() {
 }
 //-----------END OF RANDOM FUNCTIONS   -----------------------------------------
 
+var planet = document.getElementById("circle");
+var option = document.getElementById("planet_git");
+var blnClicked = false;
+planet.onclick = function(){
+    if(!blnClicked){
+        planet.style.left = 20+"px";
+        planet.style.animationPlayState = "paused";
+        option.style.left = 46+"px";
+    }else{
+        planet.style.left = -60+"px";
+        planet.style.animationPlayState = "running";
+        option.style.left = -200+"px";
+    }
+    planet.style.transition = "left 0.5s";
+    planet.style.webkitTransition = "left 0.5s";
+    option.style.transition = "left 0.5s";
+    option.style.webkitTransition = "left 0.5s";
+    blnClicked = !blnClicked;
+};
 
 function create(){
     let numStars = randNumRange(100, screen.width * 0.05);
