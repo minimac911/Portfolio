@@ -178,7 +178,7 @@ body{
 /* SCROLL STYLING */
 #scroll-section{
     position: absolute;
-    top: 90%;
+    bottom: 2%;
     left: 50%;
     color: #fff;
 }
