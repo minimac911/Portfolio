@@ -10,8 +10,15 @@
     background-color: lime;
 }
 
+#vertical-align{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
 .planet{
-    margin-top: 2%;
     position: relative;
     left: -60px;
     width: 150px;
