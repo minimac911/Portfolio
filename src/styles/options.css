@@ -11,8 +11,8 @@
 }
 
 .planet{
-    top: 7%;
-    position: absolute;
+    margin-top: 2%;
+    position: relative;
     left: -60px;
     width: 150px;
     height: 150px;
@@ -48,10 +48,20 @@
 /* END OF PLANE NUMBER ONE */
 
 /* PLANET NUMBER TWO */
-#planet_git{
+.option-planets{
     left: -200px;
-    top: 26%;
+    margin: 2px;
     width: 100px;
     height: 100px;
     animation: none;
+    position: relative;
+}
+#planet_git{
+    
+}
+#planet_about{
+    
+}
+#planet_contact{
+
 }

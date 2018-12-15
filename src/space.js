@@ -53,22 +53,33 @@ function getRandomColor() {
 //-----------END OF RANDOM FUNCTIONS   -----------------------------------------
 
 var planet = document.getElementById("circle");
-var option = document.getElementById("planet_git");
+var option = [];
+option.push(document.getElementById("planet_git"));
+option.push(document.getElementById("planet_about")); 
+option.push(document.getElementById("planet_contact"));  
 var blnClicked = false;
 planet.onclick = function(){
     if(!blnClicked){
         planet.style.left = 20+"px";
         planet.style.animationPlayState = "paused";
-        option.style.left = 46+"px";
+        option.forEach((x)=>{
+            x.style.left = 45+"px";
+        });
     }else{
         planet.style.left = -60+"px";
         planet.style.animationPlayState = "running";
-        option.style.left = -200+"px";
+        option.forEach((x)=>{
+            x.style.left = -200+"px";
+        });
     }
     planet.style.transition = "left 0.5s";
     planet.style.webkitTransition = "left 0.5s";
-    option.style.transition = "left 0.5s";
-    option.style.webkitTransition = "left 0.5s";
+    var coutner = 0;
+    option.forEach((x)=>{
+        x.style.transition = "left 0.5s 0."+coutner+"s";
+        x.style.webkitTransition = "left 0.5s 0."+coutner+"s";
+        coutner++;
+    }); 
     blnClicked = !blnClicked;
 };
 
