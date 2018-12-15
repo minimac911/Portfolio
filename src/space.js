@@ -59,27 +59,37 @@ option.push(document.getElementById("planet_about"));
 option.push(document.getElementById("planet_contact"));  
 var blnClicked = false;
 planet.onclick = function(){
-    if(!blnClicked){
+    var counter = 0;
+    var speed = 0.3;
+    if(!blnClicked){//GOING FORWARD
         planet.style.left = 20+"px";
         planet.style.animationPlayState = "paused";
         option.forEach((x)=>{
             x.style.left = 45+"px";
         });
-    }else{
+        //animation for the option planets
+        option.forEach((x)=>{
+            x.style.transition = "left "+speed+"s 0."+counter+"s";
+            x.style.webkitTransition = "left "+speed+"s 0."+counter+"s";
+            counter++;
+        });
+    }else{//GOING BACK
         planet.style.left = -60+"px";
         planet.style.animationPlayState = "running";
         option.forEach((x)=>{
             x.style.left = -200+"px";
         });
+        //animation for the option planets\
+        counter = option.length
+        option.forEach((x)=>{
+            x.style.transition = "left "+speed+"s 0."+counter+"s";
+            x.style.webkitTransition = "left "+speed+"s 0."+counter+"s";
+            counter--;
+        });
     }
-    planet.style.transition = "left 0.5s";
-    planet.style.webkitTransition = "left 0.5s";
-    var coutner = 0;
-    option.forEach((x)=>{
-        x.style.transition = "left 0.5s 0."+coutner+"s";
-        x.style.webkitTransition = "left 0.5s 0."+coutner+"s";
-        coutner++;
-    }); 
+    counter = option.length-counter;
+    planet.style.transition = "left "+speed+"s 0."+counter+"s";
+    planet.style.webkitTransition = "left "+speed+"s 0."+counter+"s";
     blnClicked = !blnClicked;
 };
 
@@ -89,8 +99,6 @@ function create(){
         createStaicStar();
     }
 }
-
-
 create();
 
 
