@@ -16,10 +16,10 @@ function createStaicStar() {
     var colour = getRandomColor();
     star.style.backgroundColor = colour;
 
-    let widthAndHeigth = randNumRange(2, 6)
+    let widthAndHeigth = randNumRange(1.5, 5)
     star.style.width = widthAndHeigth + "px";
     star.style.height = widthAndHeigth + "px";
-    if(randNumGen()<=30){
+    if(randNumGen()<=25){
         star.style.animation = "pulse " + randNumRange(1, 9) + "s infinite";
     }else{
         star.style.animation = "null";
@@ -93,8 +93,20 @@ planet.onclick = function(){
     blnClicked = !blnClicked;
 };
 
+// var shootingStars = [];
+// shootingStars[0] = document.getElementById("p-1");
+// shootingStars[1] = document.getElementById("p-2");
+// shootingStars[2] = document.getElementById("p-3");
+
+// var time_1 = 10;
+
+// setInterval(() => {
+//     shootingStars[0].style.top = randNumGen()+"%";
+//     time_1 = randNumRange(1,20);
+// }, time_1*1000);
+
 function create(){
-    let numStars = randNumRange(100, screen.width * 0.05);
+    let numStars = randNumRange(100, screen.width * 0.07);
     for (let i = 0; i < numStars; i++) {
         createStaicStar();
     }
