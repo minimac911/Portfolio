@@ -15,6 +15,13 @@ html, body {
     overflow-x: hidden;
 
 }
+.center{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%); 
+}
 #main{
   position: absolute;
   width: 100%;
@@ -128,22 +135,6 @@ body{
 #p-3{
   animation-duration:20s;
   top:90%;
-}
-
-/* Heading Style */
-#welcome-heading{
-  position: absolute;
-  margin: 0;
-  left: 50%;
-  top: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font : normal 400 3em 'Montserrat', sans-serif;
-}
-
-#name-heading{
-  color: red;
 }
 
 /* SCROLL STYLING */

@@ -63,12 +63,96 @@
     animation: none;
     position: relative;
 }
-#planet_git{
-    
-}
-#planet_about{
-    
-}
-#planet_contact{
 
+/* Heading Style */
+
+
+.welcome{
+    color: white;
+    font : normal 400 3em 'Montserrat', sans-serif;
+}
+
+#welcome-heading{
+    margin: 0;
+}
+
+#name-heading{
+    color: red;
+    font-size: 110%;
+    font-weight: 900;
+}
+
+.options{
+    visibility: hidden;
+    font-size: 105%;
+    width: 105%
+}
+
+#who-am-i{
+    position: absolute;
+    left: 40px;
+    top: 55%;
+    margin: 0;
+}
+
+#what-i-do{
+    position: absolute;
+    left: 30%;
+    top: 110%;
+    margin: 0;
+}
+
+#github{
+    position: absolute;
+    left: 60%;
+    top: 55%;
+    margin: 0;
+    
+}
+
+.hamrburger, .line{
+    width: 50px;
+    height: 5px;
+    background-color: #ecf0f1;
+    display: block;
+    margin: 8px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburger:hover{
+    cursor: pointer;
+}
+
+#hamburger-details{
+    padding: 20px 10px ;
+    content: "";
+    border-radius: 100%;
+    border: 5px solid  white;
+    width: 70px;
+    height: 47px;
+    margin: auto;
+    margin-top: 30px;
+  
+}
+
+#hamburger-details.is-active .line:nth-child(1){
+    -webkit-transform: translateY(13px);
+    -ms-transform: translateY(13px);
+    -o-transform: translateY(13px);
+    transform: translateY(13px);
+}
+  
+#hamburger-details.is-active .line:nth-child(3){
+    -webkit-transform: translateY(-13px);
+    -ms-transform: translateY(-13px);
+    -o-transform: translateY(-13px);
+    transform: translateY(-13px);
+}
+
+#temp-name{
+    position: absolute;
+    margin: auto;
+    display: block;
 }
