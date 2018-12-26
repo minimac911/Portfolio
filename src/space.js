@@ -7,7 +7,7 @@ function createStaicStar() {
 
     star.style.marginLeft = randNumGen() + "%";
 
-    let mTop = randNumGen() - 25;
+    let mTop = randNumGen();
     if (mTop < 0) {
         mTop = randNumRange(0, 20);
     }

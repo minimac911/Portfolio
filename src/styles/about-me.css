@@ -1,22 +1,47 @@
 #about-me-page{
     position: absolute;
-    top: 100%;
+    top: 110%;
     height: 200%;
     width: 100%;
-    overflow: auto;
-    background-color: rgb(0, 6, 37);
-    
+    /* background-color: rgb(0, 6, 37); */
+    z-index: 1;
 }
-
+.about-me{
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background-color: none;
+    
+    /* background-color: #8C43FF; */
+}
+#intro{
+    position: absolute;
+    top: -7%;
+    right: -20%;
+    width: auto;
+    height: 50%;
+    padding: 20px;
+    padding-right: 22%;
+    padding-left: 10%;
+    border-radius: 800px;
+    background-color: #888888;
+    text-align: right;
+    color: white;
+    font-size: 150%;
+    z-index: 2;
+  overflow: hidden;
+}
 /* Heading for Who am I? */
 .about-heading{
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: 75px;
     text-align: center;
     margin: 35px;
+    margin-top: 20px;
+    margin-bottom: 50px;
 }
 .about-heading:after {
-    background: none repeat scroll 0 0 rgb(32, 32, 32);
+    background: none repeat scroll 0 0 rgb(255, 255, 255);
     bottom: -10px;
     content: "";
     border-radius: 800px;
@@ -27,11 +52,8 @@
     width: 22%;
 }
 
-.about-me{
-    position: absolute;
-    width: 100%;
-    height: 50%;
-    background-color: rgb(221, 221, 221);
+#intro-statement{
+    margin: 0;
 }
 .what-i-do{
     position: absolute;
