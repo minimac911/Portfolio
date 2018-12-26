@@ -191,90 +191,6 @@ body{
   }
 }
 
-/* MARs */
-.mars {
-  position: absolute;
-  top: 20%;
-  left: 85%;
- z-index: 0;
-}
- .mars .planet {
-  box-sizing: border-box;
-  position: absolute;
-  border-radius: 100%;
-  height: 200px;
-  width: 200px;
-  overflow: hidden;
-  margin-left: -60px;
-  margin-top: -60px;
-  z-index: 2;
-}
- .mars .planet .surface {
-  position: absolute;
-  border-radius: 100%;
-  height: 140%;
-  width: 140%;
-  top: -30%;
-  right: -10%;
-  box-sizing: border-box;
-  border: 50px solid rgba(0, 0, 0, 0.15);
-  background: #ff5f40;
-}
- .mars .planet .crater1,
- .mars .planet .crater2,
- .mars .planet .crater3   {
-  position: absolute;
-  border-radius: 100%;
-  background: rgba(0, 0, 0, 0.15);
-  box-shadow: inset 3px 3px 0 rgba(0, 0, 0, 0.2);
-}
- .mars .planet .crater1 {
-  height: 16%;
-  width: 16%;
-  top: 32%;
-  left: 17%;
-}
- .mars .planet .crater2 {
-  height: 8%;
-  width: 8%;
-  top: 26%;
-  left: 55%;
-  box-shadow: inset 2px 2px 0 rgba(0, 0, 0, 0.2);
-}
- .mars .planet .crater3 {
-  height: 8%;
-  width: 8%;
-  top: 60%;
-  left: 40%;
-  box-shadow: inset 2px 2px 0 rgba(0, 0, 0, 0.2);
-}
-
-/* earth */
-.earth{
-  position: absolute;
-  bottom: -20%;
-  left: -10%;
-  width: 90vh;
-  height: 90vh;
-  border-radius: 100%;
-  background-color: rgb(0, 4, 255);
-  z-index: 2;
-  overflow: hidden;
-  margin-left: -60px;
-  margin-top: -60px;    
-}
-
-.earth .surface {
-  position: absolute;
-  border-radius: 100%;
-  height: 140%;
-  width: 140%;
-  top: -30%;
-  right: -10%;
-  box-sizing: border-box;
-  border: 20vh solid rgba(0, 0, 0, 0.15);
-  
-}
 
 /* qutote */
 @import url(https://fonts.googleapis.com/css?family=Special+Elite);
@@ -319,3 +235,18 @@ blockquote:after {
   right: -5rem;
   bottom: 1rem;
 }
+
+/* temp */
+:root {
+  --space-color: #0f2437;
+  --earth-water-color: #2276bc;
+  --earth-land-color: #65c547;
+  --earth-cloud-color: #FFF;
+  --earth-rotation: 20000ms;
+  --cloud-rotation: 30000ms;
+  
+  --moon-color: #e6e8d2;
+}
+
+
+/* Earth */
