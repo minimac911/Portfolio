@@ -76,6 +76,7 @@
   margin-left: -60px;
   margin-top: -60px;    
   background-color: var(--earth-water-color);
+  backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   -webkit-transform: translate3d(0, 0, 0);
@@ -90,6 +91,17 @@
   width: 90vh;
   border-radius: 50%;
   box-shadow: inset -22.5vh -11.5vh  rgba(0,0,0,0.2);
+}
+
+.shadow{
+  position: absolute;
+  height: 5vh;
+  width: 40vh;
+  border-radius: 100%;
+  background-color: rgba(90, 90, 90, 0.774);
+  top: 130%;
+  left:0%;
+  z-index: 1;
 }
 
 

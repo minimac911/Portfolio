@@ -14,14 +14,6 @@
     height: 400px;
 }
 
-#name-heading{
-    color: red;
-    font-size: 110%;
-    font-weight: 900;
-}
-
-
-
 #temp-name{
     position: absolute;
     margin: auto;
