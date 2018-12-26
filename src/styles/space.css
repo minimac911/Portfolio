@@ -130,7 +130,7 @@ body{
 }
 #p-2{
   animation-duration:5s;
-  top:60%;
+  top:50%;
 }
 #p-3{
   animation-duration:20s;
@@ -241,7 +241,7 @@ blockquote:after {
 /* temp */
 .landing-text{
   position: absolute;
-  width: 100vh;
+  width: 105vh;
   height: 70vh;
 }
 
@@ -252,8 +252,8 @@ blockquote:after {
 
 .first-name{
   position: relative;
-  font-size: 400%;
-  margin-left: -20px;  
+  font-size: 300%;
+  margin-left: -95px;  
 }
 .last-name{
   font-size: 300%;
