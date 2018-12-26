@@ -105,17 +105,22 @@ function getRandomColor() {
 //     time_1 = randNumRange(1,20);
 // }, time_1*1000);
 
-var hamburger = document.querySelector('.hamburger');
-var opt = document.querySelector(".options");
-var name = document.getElementById("name-heading");
-hamburger.onclick = function(){
-    hamburger.classList.toggle("is-active");
-    if(hamburger.classList.contains("is-active")){
-        opt.style.visibility = "visible";
-    }else{
-        opt.style.visibility = "hidden";
-    }
-}
+// var hamburger = document.querySelector('.hamburger');
+// var opt = document.querySelector(".options");
+// var name = document.getElementById("name-heading");
+// hamburger.onclick = function(){
+//     hamburger.classList.toggle("is-active");
+//     if(hamburger.classList.contains("is-active")){
+//         opt.style.visibility = "visible";
+//     }else{
+//         opt.style.visibility = "hidden";
+//     }
+// }
+
+function showIt() {  
+    document.getElementById("scroll-section").style.visibility = "visible";
+}  
+setTimeout("showIt()", 15000); // after 2 sec 
 
 function create(){
     let numStars = randNumRange(100, screen.width * 0.07);
@@ -125,5 +130,3 @@ function create(){
 }
 
 create();
-
-

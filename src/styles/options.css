@@ -1,79 +1,17 @@
-/*planet styling*/
-
-/*PLNAET NUMBER ONE*/
-#circle{
-    -webkit-transition: background-color 0.5s; /* Safari */
-    transition: background-color 0.5s; 
-}
-
-#circle:hover{ 
-    background-color: lime;
-}
-
-#vertical-align{
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-
-.planet{
-    position: relative;
-    left: -60px;
-    width: 150px;
-    height: 150px;
-    background-color: gold;
-    border-radius: 50%;
-    display: inline-block;
-    border:10px solid grey;
-    animation: shake 5s 1s infinite;  
-}
-
-@keyframes shake {
-    10%, 50%, 70% {
-        width: 145px;
-        height: 145px;
-    }
-  
-    20%, 60% {
-        width: 155px;
-        height: 155px;
-    }
-}
-
-.Layer_1{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%) ;
-    margin: 0;
-    height: 30%;
-    width: 30%; 
-}
-/* END OF PLANE NUMBER ONE */
-
-/* PLANET NUMBER TWO */
-.option-planets{
-    left: -200px;
-    margin: 10px;
-    width: 80px;
-    height: 80px;
-    animation: none;
-    position: relative;
-}
-
 /* Heading Style */
-
-
 .welcome{
     color: white;
     font : normal 400 3em 'Montserrat', sans-serif;
 }
 
 #welcome-heading{
-    margin: 0;
+    margin: auto;
+    text-align: center;
+    background-color: black;
+    background-image: linear-gradient(to bottom left, #EC9F05, #FF4E00);
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
 }
 
 #name-heading{
@@ -82,77 +20,12 @@
     font-weight: 900;
 }
 
-.options{
-    visibility: hidden;
-    font-size: 105%;
-    width: 105%
-}
 
-#who-am-i{
-    position: absolute;
-    left: 40px;
-    top: 55%;
-    margin: 0;
-}
-
-#what-i-do{
-    position: absolute;
-    left: 30%;
-    top: 110%;
-    margin: 0;
-}
-
-#github{
-    position: absolute;
-    left: 60%;
-    top: 55%;
-    margin: 0;
-    
-}
-
-.hamrburger, .line{
-    width: 50px;
-    height: 5px;
-    background-color: #ecf0f1;
-    display: block;
-    margin: 8px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-}
-
-.hamburger:hover{
-    cursor: pointer;
-}
-
-#hamburger-details{
-    padding: 20px 10px ;
-    content: "";
-    border-radius: 100%;
-    border: 5px solid  white;
-    width: 70px;
-    height: 47px;
-    margin: auto;
-    margin-top: 30px;
-  
-}
-
-#hamburger-details.is-active .line:nth-child(1){
-    -webkit-transform: translateY(13px);
-    -ms-transform: translateY(13px);
-    -o-transform: translateY(13px);
-    transform: translateY(13px);
-}
-  
-#hamburger-details.is-active .line:nth-child(3){
-    -webkit-transform: translateY(-13px);
-    -ms-transform: translateY(-13px);
-    -o-transform: translateY(-13px);
-    transform: translateY(-13px);
-}
 
 #temp-name{
     position: absolute;
     margin: auto;
     display: block;
 }
+
+/* Temp stuff */
