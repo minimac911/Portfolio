@@ -72,11 +72,11 @@
     margin-left: -60px;
     margin-top: -60px;    
     background-color: var(--earth-water-color);
-    /* -webkit-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
-    transform: rotate(15deg); */
+    transform: rotate(15deg);
   }
   
   .earth:after {
@@ -107,7 +107,7 @@
     z-index: 12;
   }
   
-  .shine::after {
+  .shine:after {
    content: '';
    position: absolute;
    height: 9vh;
@@ -125,10 +125,45 @@
     border-radius: 8000px;
   }
   
-  .land.one{
-    bottom: 10%;
-    left: 66%;
-    height: 10vh;
+.land.one{
+    bottom: 15%;
+    left: 20%;
+    height: 20vh;
     width: 30vh;
-  }
+}
+
+.land.two{
+    bottom: 30%;
+    left: 65%;
+    height: 25vh;
+    width: 40vh;
+}
+
+.land.three{
+    bottom: 83%;
+    left: 39%;
+    height: 8vh;
+    width: 10vh;
+}
+
+.land.four{
+    bottom: 55%;
+    left: -10%;
+    height: 26vh;
+    width: 40vh;
+}
+
+.land.five{
+    bottom: 65%;
+    left: 80%;
+    height: 18vh;
+    width: 30vh;
+}
+
+.land.six{
+    bottom: 40%;
+    left: 5%;
+    height: 5vh;
+    width: 10vh;
+}
   
