@@ -237,16 +237,4 @@ blockquote:after {
 }
 
 /* temp */
-:root {
-  --space-color: #0f2437;
-  --earth-water-color: #2276bc;
-  --earth-land-color: #65c547;
-  --earth-cloud-color: #FFF;
-  --earth-rotation: 20000ms;
-  --cloud-rotation: 30000ms;
-  
-  --moon-color: #e6e8d2;
-}
 
-
-/* Earth */
