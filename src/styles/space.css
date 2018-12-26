@@ -201,6 +201,7 @@ body{
   src: local('Special Elite Regular'), local('SpecialElite-Regular'), url(https://fonts.gstatic.com/s/specialelite/v8/XLYgIZbkc4JPUL5CVArUVL0ntnAOTQ.ttf) format('truetype');
 }
 .quote{
+  margin-left: 10%;
   margin-top: 5%;
   font-family: 'Special Elite', cursive;
 	color: #fffdf5;
@@ -239,14 +240,14 @@ blockquote:after {
 
 /* temp */
 .landing-text{
-  top: 25%;
-  width: 70vh;
-  height: 30vh;
+  position: absolute;
+  width: 100vh;
+  height: 70vh;
 }
 
 .name-heading{
+  text-align: center;
   color: rgb(255, 251, 251);
-  margin-left: 100px;
 }
 
 .first-name{
@@ -256,5 +257,5 @@ blockquote:after {
 }
 .last-name{
   font-size: 300%;
-  margin-left: 60px;
+  margin-left: 100px;
 }
