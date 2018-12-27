@@ -2,6 +2,7 @@
   --earth-water-color: #2276bc;
   --earth-land-color: #65c547;
   --earth-cloud-color: #FFF;
+  --moon-color: #e6e8d2;
 }
 /* mars */
 .mars {
@@ -11,55 +12,55 @@
   z-index: 0;
 }
   .mars .planet {
-  box-sizing: border-box;
-  position: absolute;
-  border-radius: 100%;
-  height: 35vh;
-  width: 35vh;
-  overflow: hidden;
-  margin-left: -10.5vh;
-  margin-top: -10.5vh;
-  z-index: 2;
-}
-  .mars .planet .surface {
-  position: absolute;
-  border-radius: 100%;
-  height: 140%;
-  width: 140%;
-  top: -30%;
-  right: -10%;
-  box-sizing: border-box;
-  border: 8.75vh solid rgba(0, 0, 0, 0.15);
-  background: #ff5f40;
-}
-  .mars .planet .crater1,
-  .mars .planet .crater2,
-  .mars .planet .crater3   {
-  position: absolute;
-  border-radius: 100%;
-  background: rgba(0, 0, 0, 0.15);
-  box-shadow: inset 0.525vh 0.525vh 0 rgba(0, 0, 0, 0.2);
-}
-  .mars .planet .crater1 {
-  height: 16%;
-  width: 16%;
-  top: 32%;
-  left: 17%;
-}
-  .mars .planet .crater2 {
-  height: 8%;
-  width: 8%;
-  top: 26%;
-  left: 55%;
-  box-shadow: inset 0.35vh 0.35vh 0 rgba(0, 0, 0, 0.2);
-}
-  .mars .planet .crater3 {
-  height: 8%;
-  width: 8%;
-  top: 60%;
-  left: 40%;
-  box-shadow: inset 0.35vh 0.35vh 0 rgba(0, 0, 0, 0.2);
-}
+    box-sizing: border-box;
+    position: absolute;
+    border-radius: 100%;
+    height: 35vh;
+    width: 35vh;
+    overflow: hidden;
+    margin-left: -10.5vh;
+    margin-top: -10.5vh;
+    z-index: 2;
+  }
+    .mars .planet .surface {
+      position: absolute;
+      border-radius: 100%;
+      height: 140%;
+      width: 140%;
+      top: -30%;
+      right: -10%;
+      box-sizing: border-box;
+      border: 8.75vh solid rgba(0, 0, 0, 0.15);
+      background: #ff5f40;
+    }
+    .mars .planet .crater1,
+    .mars .planet .crater2,
+    .mars .planet .crater3   {
+      position: absolute;
+      border-radius: 100%;
+      background: rgba(0, 0, 0, 0.15);
+      box-shadow: inset 0.525vh 0.525vh 0 rgba(0, 0, 0, 0.2);
+    }
+    .mars .planet .crater1 {
+      height: 16%;
+      width: 16%;
+      top: 32%;
+      left: 17%;
+    }
+    .mars .planet .crater2 {
+      height: 8%;
+      width: 8%;
+      top: 26%;
+      left: 55%;
+      box-shadow: inset 0.35vh 0.35vh 0 rgba(0, 0, 0, 0.2);
+    }
+    .mars .planet .crater3 {
+      height: 8%;
+      width: 8%;
+      top: 60%;
+      left: 40%;
+      box-shadow: inset 0.35vh 0.35vh 0 rgba(0, 0, 0, 0.2);
+    }
 
 /* earth */
 

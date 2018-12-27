@@ -1,0 +1,317 @@
+/* Astronaut */
+.astronaut{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 500px;
+    /* background-color: rgba(256, 256, 246, 0.4); */
+}
+
+.one{
+    left: 80%;
+    top: 80%;
+    z-index: 1;
+}
+
+    .astronaut .head{
+        position: absolute;
+        left: 50%;
+        top: 65px;
+        transform: translate(-50%, -50%);
+        width: 140px;
+        height: 130px;
+        border-radius: 100px 100px 90px 90px;    
+        background-color: #FFFDFF;
+        z-index: 2;
+    }
+
+        .astronaut .head .antena-right{
+            position: absolute;
+            width: 10px;
+            height: 20px;
+            left: -3px;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            border-radius: 60px 0px 0px 60px;
+            background-color: #ABA7AA;
+        }
+
+        .astronaut .head .antena-left{
+            position: absolute;
+            width: 10px;
+            height: 20px;
+            right: -13px;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            border-radius: 0px 60px 60px 0px;
+            background-color: #ABA7AA;
+        }
+
+        .astronaut .head .visor {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 85%;
+            width: 85%;
+            border-radius: 100px 100px 90px 90px;
+            background-color: #1AADC9;
+            box-shadow: inset -15px -15px 0px 0px rgba(256,256,246, 0.2);
+            z-index: 2;
+        }
+        .astronaut .head .visor .glare{
+            position: absolute;
+            top: 35px;
+            left: 15px;
+            width: 18px;
+            height: 18px;
+            border-radius: 100%;
+            background-color: rgba(255, 251, 251, 0.274);
+        }
+
+    .astronaut .neck{
+        position: absolute;
+        left: 50%;
+        top: 130px;
+        transform: translate(-50%, -50%);
+        width: 100px;
+        height: 30px;
+        border-radius: 0 0 100% 100%;
+        background-color: #ABA7AA;
+        z-index: 1;
+    }
+
+    .astronaut .body{
+        position: absolute;
+        top: 130px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 120px;
+        height: 180px;
+        background-color: #FFFDFF;
+    }
+
+        .astronaut .body .left-arm{
+            animation: wavingArm 2s ease-in-out infinite;
+            transform-origin: right center;
+            position: absolute;
+            width: 125px;
+            height: 100px;
+            left: -125px;
+            top: -34px;
+        }
+
+            .astronaut .body .left-arm .left-arm-one{
+                background-color: #FFFDFF;
+                width: 85px;
+                height: 35px;
+                position: absolute;
+                left: 55px;
+                top: 34px;
+                border-radius: 40px ;
+            }
+
+            .astronaut .body .left-arm .left-arm-two{
+               
+                background-color: #FFFDFF;
+                width: 90px;
+                height: 35px;
+                position: absolute;
+                /* left: -124px; */
+                top: 18px;
+                border-radius: 40px;
+                transform: rotate(35deg);
+            }
+            @keyframes wavingArm {
+                0% { 
+                    transform: rotate(5deg) translate(0px);
+                }
+                50% { 
+                    transform: rotate(30deg) translate(0px);
+                }
+                100% { 
+                    transform: rotate(5deg) translate(0px);
+                }
+            }
+                .astronaut .body .left-arm .left-arm-two .hoop {
+                    border-radius: 0;
+                    background-color:  #1AADC9;
+                    width: 8px;
+                    height: 35px;
+                    position: absolute;
+                    /* top: 30px; */
+                    left: 25px;
+                }
+        .astronaut .body .right-arm{
+            background-color: #FFFDFF;
+            width: 35px;
+            height: 160px;
+            position: absolute;
+            right: -35px;
+            border-radius: 0 40px 40px 0;
+        }
+
+            .astronaut .body .right-arm .shadow{
+                background-color: rgba(0,0,0, 0.1);
+                width: 5px;
+                height: 126px;
+                position: absolute;
+                border-radius: 0;
+                top: 35px;
+                left: 0;
+            }
+
+            .astronaut .body .right-arm .hoop{
+                border-radius: 0;
+                background-color:  #1AADC9;
+                width: 35px;
+                height: 8px;
+                position: absolute;
+                top: 120px;
+                left: 0px;
+            }
+            
+        .astronaut .body .panel{
+            position: absolute;
+            width: 70px;
+            height: 35px;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #D1D1D1;
+            border-radius: 10px;
+        }
+
+            .astronaut .body .panel .dot{
+                position: absolute;
+                width: 15px;
+                height: 15px;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                border-radius: 100%;
+                margin: 0;
+            }
+
+            .astronaut .body .panel .dot1{
+                left: 20%;
+                background-color: #4775ff;
+            }
+
+            .astronaut .body .panel .dot2{
+                left: 50%;
+                background-color: #ffd147;
+            }
+
+            .astronaut .body .panel .dot3{
+                left: 80%;
+                background-color: tomato;
+            }
+
+        .astronaut .body .belt{
+            position: absolute;
+            top: 140px;
+            left: 0;
+            right: 0;
+            height: 10px;
+        }
+
+            .astronaut .body .belt .loop1{
+                height: 100%;
+                width: 32px;
+                background-color: #1AADC9;
+                position: absolute;
+                left: 0;
+            }
+
+            .astronaut .body .belt .loop2{
+                height: 100%;
+                width: 32px;
+                background-color: #1AADC9;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            .astronaut .body .belt .loop3{
+                height: 100%;
+                width: 32px;
+                background-color: #1AADC9;
+                position: absolute;
+                right: 0;
+            }
+
+    .astronaut .backpack{
+        position: absolute;
+        width: 140px;
+        height: 180px;
+        top: 39%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        box-shadow: inset 0 16px 0 0px #FFFDFF;
+        background-color: #C3C3C3;
+        border-radius: 10px;
+        z-index: -1;
+    }
+
+    .astronaut .legs{
+        position: absolute;
+        top: 310px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 120px;
+        height: 100px;
+        /* background-color: rgba(255, 255, 255, 0.527); */
+    }
+
+        .astronaut .legs .thigh-gap{
+            position: absolute;
+            top: -5%;
+            left: 50%;
+            transform: translate(-50%, 0);
+            width: 8%;
+            height: 105%;
+            background-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+            border-radius: 40px 40px 0 0;
+            z-index: 1;
+        }
+
+        .astronaut .legs .left-leg{
+            position: absolute;
+            width: 46%;
+            height: 100%;
+            background-color: #FFFDFF;
+        }
+            .astronaut .legs .left-leg .left-boot{
+                position: absolute;
+                bottom: -10px;
+                left: -8px;
+                width: 65px;
+                height: 35px;
+                background-color: #FFFDFF;
+                border-radius: 40px 40px 0 0;
+                border-bottom: 5px dashed grey;
+                box-shadow: 0 -4px 0px 0px rgba(0,0,0, 0.1);
+            }
+
+        .astronaut .legs .right-leg{
+            position: absolute;
+            right: 0;
+            width: 46%;
+            height: 100%;
+            background-color: #FFFDFF;
+        }
+
+            .astronaut .legs .right-leg .right-boot{
+                position: absolute;
+                bottom: -10px;
+                right: -8px;
+                width: 65px;
+                height: 35px;
+                background-color: #FFFDFF;
+                border-radius: 40px 40px 0 0;
+                border-bottom: 5px dashed grey;
+                box-shadow: 0 -4px 0px 0px rgba(0,0,0, 0.1);
+            }
+
+
+
