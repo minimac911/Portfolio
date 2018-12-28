@@ -2,49 +2,53 @@
 .astronaut{
     position: absolute;
     transform: translate(-50%, -50%);
-    width: 400px;
-    height: 500px;
+    width: 40vh;
+    height: 40vh;
+
     /* background-color: rgba(256, 256, 246, 0.4); */
 }
 
 .one{
     left: 80%;
-    top: 80%;
+    top: 95%;
     z-index: 1;
 }
 
     .astronaut .head{
         position: absolute;
         left: 50%;
-        top: 65px;
+        top: 16.25%;
         transform: translate(-50%, -50%);
-        width: 140px;
-        height: 130px;
-        border-radius: 100px 100px 90px 90px;    
+        width: 35%;
+        height: 32.5%;
         background-color: #FFFDFF;
         z-index: 2;
+        border-radius: 100px 100px 90px 90px;    
+        /* Change this to scale */
     }
-
-        .astronaut .head .antena-right{
-            position: absolute;
-            width: 10px;
-            height: 20px;
-            left: -3px;
-            top: 50%;
-            transform: translate(-50%,-50%);
-            border-radius: 60px 0px 0px 60px;
-            background-color: #ABA7AA;
-        }
 
         .astronaut .head .antena-left{
             position: absolute;
-            width: 10px;
-            height: 20px;
-            right: -13px;
+            width: 7.142%;
+            height: 15.364%;
+            left: -2.307%;
             top: 50%;
             transform: translate(-50%,-50%);
-            border-radius: 0px 60px 60px 0px;
             background-color: #ABA7AA;
+            /* Change this to scale */
+            border-radius: 60px 0px 0px 60px;
+        }
+
+        .astronaut .head .antena-right{
+            position: absolute;
+            width: 7.142%;
+            height: 15.38%;
+            right: -9.285%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            background-color: #ABA7AA;
+            /* Change this to scale */
+            border-radius: 0px 60px 60px 0px;
         }
 
         .astronaut .head .visor {
@@ -54,40 +58,41 @@
             transform: translate(-50%, -50%);
             height: 85%;
             width: 85%;
-            border-radius: 100px 100px 90px 90px;
             background-color: #1AADC9;
-            box-shadow: inset -15px -15px 0px 0px rgba(256,256,246, 0.2);
             z-index: 2;
+            /* Change this to scale */
+            box-shadow: inset -15px -15px 0px 0px rgba(256,256,246, 0.2);
+            border-radius: 100px 100px 90px 90px;
         }
-        .astronaut .head .visor .glare{
-            position: absolute;
-            top: 35px;
-            left: 15px;
-            width: 18px;
-            height: 18px;
-            border-radius: 100%;
-            background-color: rgba(255, 251, 251, 0.274);
-        }
+            .astronaut .head .visor .glare{
+                position: absolute;
+                top: 31.67%;
+                left: 12.6%;
+                width: 16%;
+                height: 18%;
+                border-radius: 100%;
+                background-color: rgba(255, 251, 251, 0.274);
+            }
 
     .astronaut .neck{
         position: absolute;
         left: 50%;
-        top: 130px;
+        top: 32.5%;
         transform: translate(-50%, -50%);
-        width: 100px;
-        height: 30px;
-        border-radius: 0 0 100% 100%;
+        width: 23%;
+        height: 8%;
         background-color: #ABA7AA;
         z-index: 1;
+        border-radius: 0 0 100% 100%;
     }
 
     .astronaut .body{
         position: absolute;
-        top: 130px;
+        top: 32.5%;
         left: 50%;
         transform: translate(-50%, 0);
-        width: 120px;
-        height: 180px;
+        width: 30%;
+        height: 45%;
         background-color: #FFFDFF;
     }
 
@@ -95,32 +100,33 @@
             animation: wavingArm 2s ease-in-out infinite;
             transform-origin: right center;
             position: absolute;
-            width: 125px;
-            height: 100px;
-            left: -125px;
-            top: -34px;
+            width: 104%;
+            height: 55.5%;
+            left: -104.1%;
+            top: -18.8%;
         }
 
             .astronaut .body .left-arm .left-arm-one{
                 background-color: #FFFDFF;
-                width: 85px;
-                height: 35px;
+                width: 68%;
+                height: 35%;
                 position: absolute;
-                left: 55px;
-                top: 34px;
-                border-radius: 40px ;
+                left: 44%;
+                top: 34%;
+                /* change this to scale */
+                border-radius: 40px;
             }
 
             .astronaut .body .left-arm .left-arm-two{
                
                 background-color: #FFFDFF;
-                width: 90px;
-                height: 35px;
+                width: 72%;
+                height: 35%;
                 position: absolute;
-                /* left: -124px; */
-                top: 18px;
-                border-radius: 40px;
+                top: 18%;
                 transform: rotate(35deg);
+                /* change this to scale */
+                border-radius: 40px;
             }
             @keyframes wavingArm {
                 0% { 
@@ -136,56 +142,58 @@
                 .astronaut .body .left-arm .left-arm-two .hoop {
                     border-radius: 0;
                     background-color:  #1AADC9;
-                    width: 8px;
-                    height: 35px;
+                    width: 8%;
+                    height: 100%;
                     position: absolute;
-                    /* top: 30px; */
-                    left: 25px;
+                    left: 27%
                 }
+
         .astronaut .body .right-arm{
             background-color: #FFFDFF;
-            width: 35px;
-            height: 160px;
+            width: 29%;
+            height: 88.9%;
             position: absolute;
-            right: -35px;
+            right: -29%;
+            /* change this to scale */
             border-radius: 0 40px 40px 0;
         }
 
             .astronaut .body .right-arm .shadow{
                 background-color: rgba(0,0,0, 0.1);
-                width: 5px;
-                height: 126px;
+                width: 14.3%;
+                height: 78.7%;
                 position: absolute;
                 border-radius: 0;
-                top: 35px;
+                top: 21.9%;
                 left: 0;
             }
 
             .astronaut .body .right-arm .hoop{
                 border-radius: 0;
                 background-color:  #1AADC9;
-                width: 35px;
-                height: 8px;
+                width: 100%;
+                height: 5%;
                 position: absolute;
-                top: 120px;
-                left: 0px;
+                top: 75%;
+                left: 0;
             }
             
         .astronaut .body .panel{
             position: absolute;
-            width: 70px;
-            height: 35px;
+            width: 58.3%;
+            height: 20%;
             top: 40%;
             left: 50%;
             transform: translate(-50%, -50%);
             background-color: #D1D1D1;
+            /* change this to scale */
             border-radius: 10px;
         }
 
             .astronaut .body .panel .dot{
                 position: absolute;
-                width: 15px;
-                height: 15px;
+                width: 21%;
+                height: 42.8%;
                 top: 50%;
                 transform: translate(-50%, -50%);
                 border-radius: 100%;
@@ -209,15 +217,15 @@
 
         .astronaut .body .belt{
             position: absolute;
-            top: 140px;
+            top: 77.7%;/*120 - 180*/
             left: 0;
             right: 0;
-            height: 10px;
+            height: 5.5%;
         }
 
             .astronaut .body .belt .loop1{
                 height: 100%;
-                width: 32px;
+                width: 26.6%;
                 background-color: #1AADC9;
                 position: absolute;
                 left: 0;
@@ -225,7 +233,7 @@
 
             .astronaut .body .belt .loop2{
                 height: 100%;
-                width: 32px;
+                width: 26.6%;
                 background-color: #1AADC9;
                 position: absolute;
                 left: 50%;
@@ -234,7 +242,7 @@
 
             .astronaut .body .belt .loop3{
                 height: 100%;
-                width: 32px;
+                width: 26.6%;
                 background-color: #1AADC9;
                 position: absolute;
                 right: 0;
@@ -242,24 +250,25 @@
 
     .astronaut .backpack{
         position: absolute;
-        width: 140px;
-        height: 180px;
-        top: 39%;
+        width: 35%;
+        height: 45%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
-        box-shadow: inset 0 16px 0 0px #FFFDFF;
         background-color: #C3C3C3;
-        border-radius: 10px;
         z-index: -1;
+        /* Change this to scale */        
+        box-shadow: inset 0 16px 0 0px #FFFDFF;
+        border-radius: 10px;
     }
 
     .astronaut .legs{
         position: absolute;
-        top: 310px;
+        top: 77%;
         left: 50%;
         transform: translate(-50%, 0);
-        width: 120px;
-        height: 100px;
+        width: 30%;
+        height: 25%;
         /* background-color: rgba(255, 255, 255, 0.527); */
     }
 
@@ -270,9 +279,10 @@
             transform: translate(-50%, 0);
             width: 8%;
             height: 105%;
-            background-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
-            border-radius: 40px 40px 0 0;
+            background-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.103), rgba(0, 0, 0, 0));
             z-index: 1;
+            /* Change this to scale */  
+            border-radius: 40px 40px 0 0;
         }
 
         .astronaut .legs .left-leg{
@@ -283,14 +293,15 @@
         }
             .astronaut .legs .left-leg .left-boot{
                 position: absolute;
-                bottom: -10px;
-                left: -8px;
-                width: 65px;
-                height: 35px;
+                bottom: -10%;
+                left: -10%;
+                width: 115%;
+                height: 35%;
                 background-color: #FFFDFF;
+                /* Change this to scale */  
+                box-shadow: 0 -4px 0px 0px rgba(0,0,0, 0.1);
                 border-radius: 40px 40px 0 0;
                 border-bottom: 5px dashed grey;
-                box-shadow: 0 -4px 0px 0px rgba(0,0,0, 0.1);
             }
 
         .astronaut .legs .right-leg{
@@ -303,14 +314,15 @@
 
             .astronaut .legs .right-leg .right-boot{
                 position: absolute;
-                bottom: -10px;
-                right: -8px;
-                width: 65px;
-                height: 35px;
+                bottom: -10%;
+                right: -10%;
+                width: 115%;
+                height: 35%;
                 background-color: #FFFDFF;
+                /* Change this to scale */
+                box-shadow: 0 -4px 0px 0px rgba(0,0,0, 0.1);
                 border-radius: 40px 40px 0 0;
                 border-bottom: 5px dashed grey;
-                box-shadow: 0 -4px 0px 0px rgba(0,0,0, 0.1);
             }
 
 
