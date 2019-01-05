@@ -13,7 +13,6 @@ html, body {
     font-family: 'Anonymous Pro', monospace; 
     max-width: 100%;
     overflow-x: hidden;
-
 }
 .center{
   position: absolute;
@@ -25,7 +24,7 @@ html, body {
 #main-background{
   position: absolute;
   width: 100%;
-  height: 220%;
+  height: 320%;
   background-image: linear-gradient(
     to top left,  
   rgb(59, 46, 109), rgb(38, 32, 65), rgb(2, 34, 68), rgb(1, 24, 49)

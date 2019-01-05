@@ -1,0 +1,22 @@
+.grid-container {
+    display: grid;
+    grid-template-areas:
+      "earth nothing nothing mars"
+      "earth title title astro";
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+}   
+
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+.grid-earth { grid-area: earth; }
+.grid-mars { grid-area: mars; }
+.grid-nothing { grid-area: nothing; }
+.grid-astronaut { grid-area: astro; }
+.grid-title { grid-area: title; }
