@@ -6,12 +6,11 @@ function createStaicStar() {
     star.className = "pulse";
 
     star.style.marginLeft = randNumGen() + "%";
-
-    let mTop = randNumRange(0, 150);
+    let mTop = randNumRange(0, 100);
     if (mTop < 0) {
         mTop = randNumRange(0, 20);
     }
-    star.style.marginTop = mTop + "%";
+    star.style.bottom = mTop + "%";
 
     var colour = getRandomColor();
     star.style.backgroundColor = colour;

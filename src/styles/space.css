@@ -1,16 +1,23 @@
 
 /* Google Fonts */
-@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
 
+.main-contianer{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 100%;
+  width: 100%;
+  max-width: 1920px;
+}
 
 html, body {
     background-color: black;
     margin: 0; 
-    font-family: "Open Sans";
     font-weight: 300;
     font-size: 100%;
-    font-family: 'Anonymous Pro', monospace; 
+    font-family: 'PT Sans', sans-serif;
     max-width: 100%;
     overflow-x: hidden;
 }
@@ -27,21 +34,42 @@ html, body {
   height: 320%;
   background-image: linear-gradient(
     to top left,  
-  rgb(59, 46, 109), rgb(38, 32, 65), rgb(2, 34, 68), rgb(1, 24, 49)
+  rgb(59, 46, 109), rgb(38, 32, 65), rgb(0, 15, 48), rgb(0, 15, 48), rgb(0, 15, 48),  #041527 ,  #041527,  #041527
   );
-}
-#main{
-  position: absolute;
-  width: 100%;
-  height: 100%;
+  z-index: -5;
 }
 
+#main{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 100%;
+  width: 100%;
+  max-width: 1920px;
+}
+
+
+#hamburger{
+  width: 50px;
+  fill: white;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+}
+#hamburger:hover{
+  cursor: pointer;
+}
 /*Space style*/
 #space{
     position: absolute;
     margin: 0;
-    height: 99%;
-    width: 99%;
+    padding: 0;
+    height: 100%;
+    width: inherit;
+  z-index: -5;
+
 }
 
 /*pulsating stars*/
@@ -196,71 +224,41 @@ body{
 }
 
 
-/* qutote */
-@import url(https://fonts.googleapis.com/css?family=Special+Elite);
-@font-face {
-  font-family: 'Special Elite';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Special Elite Regular'), local('SpecialElite-Regular'), url(https://fonts.gstatic.com/s/specialelite/v8/XLYgIZbkc4JPUL5CVArUVL0ntnAOTQ.ttf) format('truetype');
-}
-.quote{
-  margin-left: 10%;
-  margin-top: 5%;
-  font-family: 'Special Elite', cursive;
-	color: #fffdf5;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-  justify-content: center;
-}
-blockquote {
-  font-weight: 100;
-  font-size: 2rem;
-  max-width: 600px;
-  line-height: 1.4;
-  position: relative;
-  margin: 0;
-  padding: 0.5rem;
-}
-blockquote:before,
-blockquote:after {
-  position: absolute;
-  color: #dddbd2;
-  font-size: 8.5rem;
-  width: 4rem;
-  height: 4rem;
-}
-blockquote:before {
-  content: '“';
-  left: -5rem;
-  top: -2rem;
-}
-blockquote:after {
-  content: '”';
-  right: -5rem;
-  bottom: 1rem;
-}
 
 /* temp */
 .landing-text{
+  top: 33%;
   position: absolute;
   width: 105vh;
-  height: 70vh;
+  height: auto;
+}
+
+/* qutote */
+.sologan{
+  font-size: 300%;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+  margin-top: 70px;
 }
 
 .name-heading{
   text-align: center;
-  color: rgb(255, 251, 251);
+  color:white;
+  font-size: 600%;
   z-index: 3;
+  margin: 0;
+}
+
+.name-heading h1{
+  margin: 20px;
 }
 
 .first-name{
   position: relative;
-  font-size: 300%;
+  bottom: -45px;
   margin-left: -95px;  
 }
 .last-name{
-  font-size: 300%;
-  margin-left: 100px;
+  margin-left: 190px;
 }

@@ -10,250 +10,135 @@
 }
 
 .svg-mars{
-  position: relative;
-  float: right;
-  height: 200px;
-  width: 200px;
-  z-index: 2;  
+  position: absolute;
+  top: 200%;
+  right: 5%;
+  width: 15%;
+  z-index: -1;  
 }
 
 .svg-earth{
-  height: 200px;
-  width: 200px;
-  position: relative;
-  float: left;
-  z-index: 2;  
+  width: 35%;
+  left: 5%;
+  top: 70%;
+  position: absolute;
+  z-index: -1;  
   transform: rotate(20deg); 
 }
 
 .moon{
-  position: relative;
-  float: left;
-  height: 70px;
-  width: 70px;
-  z-index: 2; 
-}
-
-/* mars */
-.mars {
-  position: relative;
-  float: right;
-  margin: 20px;
-  z-index: 0;
-  height: 150px;
-  width: auto;
-}
-  .mars .planet {
-    box-sizing: border-box;
-    position: absolute;
-    border-radius: 100%;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    z-index: 2;
-  }
-    .mars .planet .surface {
-      position: absolute;
-      border-radius: 100%;
-      height: 140%;
-      width: 140%;
-      top: -30%;
-      right: -10%;
-      box-sizing: border-box;
-      border: 2.75vw solid rgba(0, 0, 0, 0.15);
-      background: #ff5f40;
-    }
-    .mars .planet .crater1,
-    .mars .planet .crater2,
-    .mars .planet .crater3   {
-      position: absolute;
-      border-radius: 100%;
-      background: rgba(0, 0, 0, 0.15);
-      box-shadow: inset 0.525vh 0.325vw 0 rgba(0, 0, 0, 0.2);
-    }
-    .mars .planet .crater1 {
-      height: 16%;
-      width: 16%;
-      top: 32%;
-      left: 17%;
-    }
-    .mars .planet .crater2 {
-      height: 8%;
-      width: 8%;
-      top: 26%;
-      left: 55%;
-      box-shadow: inset 0.35vh 0.3vw 0 rgba(0, 0, 0, 0.2);
-    }
-    .mars .planet .crater3 {
-      height: 8%;
-      width: 8%;
-      top: 60%;
-      left: 40%;
-      box-shadow: inset 0.35vh 0.3vw 0 rgba(0, 0, 0, 0.2);
-    }
-
-/* earth */
-
-.earth{
   position: absolute;
-  bottom: -20%;
-  left: 10%;
-  /* left: 10%; */
-  width: 90vh;
-  height: 90vh;
-  border-radius: 100%;
-  z-index: 2;
-  overflow: hidden;
-  margin-left: -60px;
-  margin-top: -60px;    
-  background-color: var(--earth-water-color);
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  transform: translate3d(0,0,0);
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  /* transform: rotate(15deg); */
+  top: 15%;
+  left: 82%;
+  width: 12%;
+  z-index: -1; 
 }
 
-.earth:after {
-  content: '';
-  position: absolute;
-  height: 90vh;
-  width: 90vh;
-  border-radius: 50%;
-  box-shadow: inset -22.5vh -11.5vh  rgba(0,0,0,0.2);
-}
-
-.shadow{
-  position: absolute;
-  height: 5vh;
-  width: 40vh;
-  border-radius: 100%;
-  background-color: rgba(90, 90, 90, 0.774);
-  top: 130%;
-  left:0%;
-  z-index: 1;
-}
-
-
-.shine {
-  position: absolute;
-  background-color: transparent;
-  width: 45vh;
-  height: 45vh;
-  border: 9vh solid #FFF;
-  border-radius: 50%;
-  border-top: solid 9vh transparent;
-  border-right: solid 9vh transparent;
-  border-bottom: solid 9vh transparent; 
-  transform: rotate(45deg);
-  opacity: .3;
-  /* left: 10%; */
-  left: 10%;
-  top: 38%;
-  z-index: 12;
-}
-
-.shine:after {
-  content: '';
-  position: absolute;
-  height: 9vh;
-  width: 9vh;
-  border-radius: 50%;
-  background-color: transparent;
-  box-shadow: 9.9vh -1.35vh 0px #FFF, 9.45vh 36.9vh 0px #FFF;
-  left: -10.8vh;
-}
-
-
-.land{
-  position: absolute;
-  background-color: var(--earth-land-color);
-  border-radius: 8000px;
-}
-  
-.land.one{
-    bottom: 15%;
-    left: 20%;
-    height: 20vh;
-    width: 30vh;
-}
-
-.land.two{
-    bottom: 30%;
-    left: 65%;
-    height: 25vh;
-    width: 40vh;
-}
-
-.land.three{
-    bottom: 83%;
-    left: 39%;
-    height: 8vh;
-    width: 10vh;
-}
-
-.land.four{
-    bottom: 55%;
-    left: -10%;
-    height: 26vh;
-    width: 40vh;
-}
-
-.land.five{
-    bottom: 65%;
-    left: 80%;
-    height: 18vh;
-    width: 30vh;
-}
-
-.land.six{
-    bottom: 40%;
+@keyframes moveAround {
+  0% { 
+    transform: rotate(-5deg) translate(0px);
     left: 5%;
-    height: 5vh;
-    width: 10vh;
+
+  }
+  5%{
+    left: 10%;
+  }
+  6%{
+    left: 4%;
+  }
+  12%{
+    left: 4%;
+  }
+  13%{
+    width: 10%;
+  }
+  15%{
+    left: 10%;
+    width: 0;
+  }
+  20%{
+    width: 0;
+    left: 10%;
+  }
+  21%{
+    width: 0;
+    left: 85%;
+  }
+  24%{
+    /* width: 5%; */
+    width: 10%;
+  }
+  35%{
+    width: 10%;
+  }
+  50% { 
+    transform: rotate(5deg) translate(0px);
+    left: 83%;
+    top: 198%;
+    width: 5%;
+  }
+  55%{
+
+  }
+  55%{
+    top: 200%;
+    width: 2%;
+  }
+  /* 65%{
+    top: 170%;
+  } */
+  62%{
+    top: 202%;
+    width: 2%;
+  }
+  79%{
+    top: 202%;
+    width: 2%;
+  }
+  80%{
+    top: 190%;
+    width: 10%;
+    left: 83%;
+
+  }
+  85%{
+    width: 0%;
+    left: 85%;
+  }
+  86%{
+    width: 0%;
+    left: 10%;
+  }
+  90%{
+    width: 10%;
+  }
+  100% { 
+      transform: rotate(-5deg) translate(0px);
+      left: 5%
+  }
 }
 
-/* Clouds for earth */
-.cloud {
+.ufo{
   position: absolute;
-  background-color: var(--earth-cloud-color);
-  border-radius: 200px;
-  box-shadow: 0 0.9vh 1.8vh 0 rgba(0,0,0,0.10);
+  width: 10%;
+  top: 180%;
+  left: 5%;
+  animation: moveAround 25s ease-in-out infinite;
+  z-index: 0;
+}
+@keyframes laser{
+  0%{
+    visibility: hidden;
+  }
   
+  1% { 
+      visibility: visible;  
+  }
+  8%{
+    visibility: hidden;
+  }
 }
-
-.cloud.c1, .cloud.c2, .cloud.c3 {
-  height: 8vh;
-  width: 20vh;
-}
-
-.cloud.c1{
-  top: 50%;
-  left: 60%;
-}
-
-.cloud.c2{
-  top: 30%;
-  left: 20%;
-}
- 
-.cloud.c3{
-  top: 20%;
-  left: 0%;
-}
-
-.cloud.c4{
-  height: 10vh;
-  width: 40vh;
-  top: 95%;
-  left: 30%;
-}
-
-.cloud.c5{
-  height: 10vh;
-  width: 40vh;
-  top: -5%;
-  left: 30%;
+#ufo-laser{
+  visibility: hidden;
+  animation: laser  25s ease-in-out infinite;
 }
