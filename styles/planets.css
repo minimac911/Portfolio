@@ -19,7 +19,7 @@
 
 .svg-earth{
   width: 35%;
-  left: 5%;
+  left: 15px;
   top: 70%;
   position: absolute;
   z-index: -1;  
@@ -141,4 +141,8 @@
 #ufo-laser{
   visibility: hidden;
   animation: laser  25s ease-in-out infinite;
+}
+
+@media screen and (max-width: 1760px) and (max-height: 1000px) {
+  
 }

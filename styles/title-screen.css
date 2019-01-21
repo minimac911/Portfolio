@@ -5,7 +5,7 @@
 .landing-text{
     top: 250px;
     position: absolute;
-    width: 105vh;
+    width: auto;
     height: auto;
   }
   
@@ -52,7 +52,7 @@
     .name-heading{
       text-align: left;
       color:white;
-      font-size: 500%;
+      font-size: 10vh;
       z-index: 3;
       margin: 0;
     }
