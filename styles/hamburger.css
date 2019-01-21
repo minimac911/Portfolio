@@ -208,23 +208,30 @@
   left: 8px;
 }
 
-.options{
+.options-list{
     left: -200px;
     position: relative;
 }
 
-.option-one, .option-two, .option-three{
-    
-    margin: 10px auto;
-    padding: 2px 10px 2px 10px;
-    color: white;
-    border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.315);
-    font-size: 25px;
-    cursor: pointer;
-   
+.option{
+  margin: 10px auto;
+  padding: 2px 25px 2px 25px;
+  color: white;
+  border-radius: 20px;
+  background-color: rgba(87, 87, 87, 0.699);
+  font-size: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center; 
 }
 
-.option-two{
-    
+.options-list a{
+  position: relative;
+  color: white;
+  text-decoration: none;
+  width: auto;
+}
+
+.options-list .option:hover{
+  background-color: orange;
 }

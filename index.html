@@ -10,13 +10,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles/space.css">
-    <link rel="stylesheet" href="styles/about-me.css">
+    <link rel="stylesheet" href="styles/about-screen.css">
     <link rel="stylesheet" href="styles/options.css">
     <link rel="stylesheet" href="styles/planets.css">
     <link rel="stylesheet" href="styles/astronaut.css">
     <link rel="stylesheet" href="styles/grid.css">
     <link rel="stylesheet" href="styles/title-screen.css">
     <link rel="stylesheet" href="styles/hamburger.css">
+    <link rel="stylesheet" href="styles/goals-screen.css">
     <title>Thomas McAlpine</title>
     <link rel="shortcut icon" href="SVG/logo.png" />
 </head>
@@ -37,15 +38,15 @@
             <span></span>
             <span></span>
         </div>
-        <div class="options">
-            <div class="option-one">
-                About Me
+        <div class="options-list">
+            <div class="option" id="option-one">
+                <a href="#main">Home</a>
             </div>
-            <div class="option-two">
-                My Goals
+            <div class="option" id="option-two">
+                <a href="#about">About Me</a>
             </div>
-            <div class="option-three">
-                Contact Me
+            <div class="option" id="option-three">
+                <a href="#goals">My Goals</a>
             </div>
         </div>
     </div>
@@ -304,10 +305,6 @@
                 </g>
             </svg>
         </div>
-        <!-- type writter text -->
-        <div class="center welcome">
-
-        </div>
 
         <div id="scroll-section">
             <div id="scroll"></div>
@@ -316,27 +313,27 @@
     </div>
 
     <!-- ABOUT ME SCREEN -->
-    <div id="about-me-page">
+    <div class="about-me-page" id="about">
         <div class="about-me">
-            <div id="intro">
-                <h1 class="about-heading">ABOUT ME</h1>
-                <div class="about-text">
-                    <h1 id="intro-statement">Hi there, I am Thomas. Nice to meet you.</h1>
-                    <br>
-                    I am currently a 2nd year undergraduate Computer Science Student.<br>
-                    With a passion for programming and learning new things!<br>
-                </div>
-                <!-- <div>
-                    <div class="crater cr1"></div>
-                    <div class="crater cr2"></div>
-                </div> -->
+            <div class="screen-content">
+                <h1 class="screen-heading">ABOUT ME</h1>
+                <h1 id="intro-statement">Hi there, I am Thomas. Nice to meet you.</h1>
+                <br>
+                I am currently a 2nd year undergraduate Computer Science Student.<br>
+                With a passion for programming and learning new things!<br>
             </div>
         </div>
     </div>
 
     <!-- GOALS SCREEN -->
-    <div class="container-goals">
-
+    <div class="container-goals" id="goals">
+        <div class="goals-content">
+            <div class="screen-content ">
+                <h1 class="screen-heading">
+                    My Goals
+                </h1>
+            </div>
+        </div>
     </div>
 
 

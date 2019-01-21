@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
-#about-me-page{
+.about-me-page{
     position: absolute;
     top: 100%;
     height: 100%;
@@ -17,7 +17,7 @@
     font-family: 'Source Sans Pro', sans-serif;
     /* background-color: #8C43FF; */
 }
-#intro{
+.screen-content{
     position: absolute;
     margin: 0;
     top: 7%;
@@ -36,7 +36,7 @@
 }
 
 /* Heading for Who am I? */
-.about-heading{
+.screen-heading{
     color: rgb(255, 255, 255);
     font-size: 75px;
     text-align: center;
@@ -44,7 +44,7 @@
     margin-top: 20px;
     margin-bottom: 50px;
 }
-.about-heading:after {
+.screen-heading:after {
     background: none repeat scroll 0 0 rgb(255, 255, 255);
     bottom: -10px;
     content: "";

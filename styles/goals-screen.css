@@ -1,0 +1,19 @@
+.container-goals{
+    position: absolute;
+    top: 200%;
+    height: 100%;
+    width: 100%;
+    /* background-color: rgb(0, 6, 37); */
+    z-index: 1;
+}
+
+.goals-content{
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    top: 50%;
+    transform: translate(0,-50%);
+    background-color: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    /* background-color: #8C43FF; */
+}
