@@ -51,17 +51,6 @@ html, body {
 }
 
 
-#hamburger{
-  width: 50px;
-  fill: white;
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  z-index: 10;
-}
-#hamburger:hover{
-  cursor: pointer;
-}
 /*Space style*/
 #space{
     position: absolute;
@@ -146,6 +135,8 @@ body{
   animation-name: particleAnimation;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
+  z-index: -2;
+
 }
 .p::before{
   position:absolute;
@@ -156,18 +147,22 @@ body{
   top:0px;
   height:1px;
   background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(255,255,255,0.4) 100%); 
+  z-index: -2;
 }
 #p-1{
   animation-duration:10s;
   top: 10%;
+  z-index: -2;
 }
 #p-2{
   animation-duration:5s;
   top:50%;
+  z-index: -2;
 }
 #p-3{
   animation-duration:20s;
   top:90%;
+  z-index: -2;
 }
 
 /* SCROLL STYLING */
@@ -222,76 +217,4 @@ body{
     transform: rotate(-45deg) translate(-20px, 20px);
     opacity: 0;
   }
-}
-
-
-
-/* temp */
-.landing-text{
-  top: 33%;
-  position: absolute;
-  width: 105vh;
-  height: auto;
-}
-
-/* qutote */
-.sologan{
-  font-size: 300%;
-  font-weight: 400;
-  color: white;
-  text-align: center;
-  margin-top: 70px;
-}
-
-.name-heading{
-  text-align: center;
-  color:white;
-  font-size: 600%;
-  z-index: 3;
-  margin: 0;
-}
-
-.name-heading h1{
-  margin: 20px;
-}
-
-.first-name{
-  position: relative;
-  bottom: -45px;
-  margin-left: -95px;  
-}
-.last-name{
-  margin-left: 190px;
-}
-
-/* Tablet Landscape */
-@media screen and (max-width: 1760px) and (max-height: 1000px) {
-  .sologan{
-    font-size: 200%;
-    font-weight: 400;
-    color: white;
-    text-align: center;
-    margin-top: 70px;
-  }
-  
-  .name-heading{
-    text-align: left;
-    color:white;
-    font-size: 600%;
-    z-index: 3;
-    margin: 0;
-  }
-  
-  .name-heading h1{
-    margin: 20px;
-  }
-  
-  .first-name{
-    position: relative;
-    bottom: -10px;
-    margin-left: 0px;  
-  }
-  .last-name{
-    margin-left: 0px;
-  } 
 }

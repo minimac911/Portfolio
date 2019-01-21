@@ -1,0 +1,27 @@
+#hamburger{
+  width: 50px;
+  fill: white;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+}
+#hamburger:hover{
+  cursor: pointer;
+}
+
+@keyframes hamburger-clicked-one-active{
+    100%{
+        transform-origin: left;
+        transform: translate(0, -50%) rotate(90deg) ;
+    }
+}
+
+@keyframes hamburger-clicked-one-disable{
+    0%{
+        transform: rotate(20deg);  
+    }
+    100%{
+        transform: rotate(0deg);  
+    }
+}

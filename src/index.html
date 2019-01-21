@@ -13,7 +13,10 @@
     <link rel="stylesheet" href="styles/planets.css">
     <link rel="stylesheet" href="styles/astronaut.css">
     <link rel="stylesheet" href="styles/grid.css">
+    <link rel="stylesheet" href="styles/title-screen.css">
+    <link rel="stylesheet" href="styles/hamburger.css">
     <title>Thomas McAlpine</title>
+    <link rel="shortcut icon" href="SVG/logo.png" />
 </head>
 
 <body>
@@ -23,10 +26,24 @@
         </div>
     </div>
 
-    <div id="hamburger">
-        <svg class="svg-image" viewBox="0 0 32 32" height="32" width="32" xmlns="http://www.w3.org/2000/svg">
-            <path d="M4 10h24a2 2 0 0 0 0-4H4a2 2 0 0 0 0 4zm24 4H4a2 2 0 0 0 0 4h24a2 2 0 0 0 0-4zm0 8H4a2 2 0 0 0 0 4h24a2 2 0 0 0 0-4z" /></svg>
+    <div  id="hamburger">
+        <svg  class="svg-image" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 8.467 8.467">
+            <g transform="matrix(0 .33433 -.25454 0 -2.232 -27.329)">
+                <rect id="line-one" width="4.054" height="32.737" x="84.27" y="-41.769" ry="2.492" paint-order="stroke fill markers" />
+                <rect id="line-two" width="4.054" height="32.737" x="92.378" y="-41.769" ry="2.492" paint-order="stroke fill markers"/>
+                <rect id="line-three" width="4.054" height="32.737" x="100.485" y="-41.769" ry="2.492" paint-order="stroke fill markers" />
+            </g>
+        </svg>
     </div>
+    <!-- <div style="visibility:hidden">
+        <svg class="svg-image" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 8.467 8.467">
+            <g transform="translate(-4.366 -27.728) scale(.33856)">
+                <rect transform="rotate(135)" ry="2.532" y="-101.346" x="46.261" height="33.262" width="5.065"
+                    paint-order="stroke fill markers" />
+                <rect transform="rotate(45)" ry="2.532" y="32.162" x="82.183" height="33.262" width="5.065" paint-order="stroke fill markers" />
+            </g>
+        </svg>
+    </div> -->
     <div id="main">
 
         <div class="landing-text center">
@@ -293,6 +310,7 @@
         </div>
     </div>
 
+    <!-- ABOUT ME SCREEN -->
     <div id="about-me-page">
         <div class="about-me">
             <div id="intro">
@@ -300,8 +318,8 @@
                 <div class="about-text">
                     <h1 id="intro-statement">Hi there, I am Thomas. Nice to meet you.</h1>
                     <br>
-                    I am currently a 2nd year undergraduate student.<br>
-                    Sutdying BSc Inormation Technology, at University Of Johannesburg.<br>
+                    I am currently a 2nd year undergraduate Computer Science Student.<br>
+                    With a passion for programming and learning new things!<br>
                 </div>
                 <!-- <div>
                     <div class="crater cr1"></div>
@@ -309,11 +327,15 @@
                 </div> -->
             </div>
         </div>
-        <div class="what-i-do">
+    </div>
 
-        </div>
+    <!-- GOALS SCREEN -->
+    <div class="container-goals">
 
-        <script src="space.js"></script>
+    </div>
+
+    <script src="js/space.js"></script>
+    <script src="js/hamburger.js"></script>
 </body>
 
 </html>
