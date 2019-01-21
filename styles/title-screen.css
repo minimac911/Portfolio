@@ -3,7 +3,7 @@
 
 /* temp */
 .landing-text{
-    top: 33%;
+    top: 250px;
     position: absolute;
     width: 105vh;
     height: auto;
@@ -52,7 +52,7 @@
     .name-heading{
       text-align: left;
       color:white;
-      font-size: 600%;
+      font-size: 500%;
       z-index: 3;
       margin: 0;
     }
